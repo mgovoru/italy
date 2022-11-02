@@ -81,11 +81,6 @@ body {
 	color: #f9804b;
 }
 
-
-.main__photo {
-	padding-top: 120px;
-}
-
 .photo__slider {
 	position: relative;
 	margin-bottom: 80px;
@@ -202,9 +197,9 @@ body {
 .photo__next {
 	position: absolute;
 	width: 62px;
-	height: 62px;
+	height: 62px;	
+	border: 2px solid gray;
 	border-radius: 50%;
-	outline: 2px solid gray;
 	background-color: white;
 	color: black;
 	display: flex;
@@ -229,11 +224,6 @@ body {
 	@media (max-width: $tablet) {
 		left: 47%;
 	}
-
-// 	 @media (max-width: 545px) {
-// 	 	top:0;
-// transform: translate(-100%, -110%);
-//  }
 }
 
 .photo__prev:hover {
@@ -262,11 +252,6 @@ body {
 	@media (max-width: $tablet) {
 		right: 47%;
 	}
-
-	//  @media (max-width: 545px) {
-	//  	top:0;
-	// 	transform: translate(100%, -110%);
-	//  }
 }
 
 .photo__item {
@@ -274,7 +259,6 @@ body {
 	outline: 2px solid gray;
 
 	@media (max-width: 1534px) {
-		//flex: 0 0 30.5%;
 		flex: 0 0 294px;
 	}
 
@@ -318,50 +302,18 @@ body {
 	font-weight: 500;
 	line-height: 140%;
 	text-transform: uppercase;
-
-	// @media (max-width: $tablet) {
-	// 	font-size: 12px;
-	// }
 }
 
 .photo__sub-title {
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 120%;
-
-	// @media (max-width: $tablet) {
-	// 	font-size: 11px;
-	// }
 }
 
 .photo__icons {
 	width: 50px;
 	height: 50px;
 	background-size: cover;
-
-	// @media (max-width: $tablet) {
-	// 	height: 29px;
-	// }
-}
-
-
-.black-div {
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 1;
-	min-width: 100vw;
-	height: 10000px;
-	background: #000000;
-	opacity: 0.4;
-}
-
-.click-close {
-	position: absolute;
-	top: 5px;
-	right: 5px;
-	width: 15px;
-	height: 15px;
 }
 
 .screen {
@@ -382,13 +334,14 @@ body {
 		height: 85%;
 		background-position: center;
 	}
-		@media (max-width: 894px) {
+
+	@media (max-width: 894px) {
 		height: 55%;
-		}
-	
-		@media (max-width: 545px) {
+	}
+
+	@media (max-width: 545px) {
 		height: 55%;
-		}
+	}
 }
 
 .unvisible {

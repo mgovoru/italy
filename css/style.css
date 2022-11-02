@@ -4,11 +4,7 @@
   color: black;
   font-weight: 700;
   font-size: 48px;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100vw;
-  z-index: 2;
 }
 
 .header__container {
@@ -18,7 +14,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 14px;
 }
 @media (max-width: 1000px) {
   .header__container {
@@ -31,59 +26,13 @@
 
 .header__image {
   width: 82px;
-  height: 52px;
-}
-@media (max-width: 830px) {
-  .header__image {
-    width: 47px;
-    height: 29px;
-  }
+  height: 70px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
 }
 
 .header__design {
   text-align: right;
-}
-@media (max-width: 830px) {
-  .header__design {
-    display: none;
-  }
-}
-
-.header__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 58px;
-}
-@media (max-width: 1000px) {
-  .header__items {
-    gap: 48px;
-  }
-}
-@media (max-width: 830px) {
-  .header__items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 15px;
-  }
-}
-
-.header__design {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 139px;
-          flex: 0 0 139px;
-}
-
-.header__image {
-  width: 70px;
-  height: 60px;
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
 }
 
 body {
@@ -164,10 +113,6 @@ body {
 
 .main__link:hover {
   color: #f9804b;
-}
-
-.main__photo {
-  padding-top: 120px;
 }
 
 .photo__slider {
@@ -353,7 +298,7 @@ body {
   width: 62px;
   height: 62px;
   border-radius: 50%;
-  outline: 2px solid gray;
+  border: 2px solid gray;
   background-color: white;
   color: black;
   display: -webkit-box;
@@ -495,25 +440,6 @@ body {
   width: 50px;
   height: 50px;
   background-size: cover;
-}
-
-.black-div {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  min-width: 100vw;
-  height: 10000px;
-  background: #000000;
-  opacity: 0.4;
-}
-
-.click-close {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 15px;
-  height: 15px;
 }
 
 .screen {
