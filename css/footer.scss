@@ -1,0 +1,35 @@
+.footer {
+	flex: 0 1 auto;
+}
+
+
+.footer {
+	background: white;
+	color: white;
+
+	@media (max-width: 760px) {
+		padding: 0;
+	}
+}
+
+.footer__container {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	@media (max-width: 760px) {
+		padding: 12px 20px;
+	}
+
+	@media (max-width: 578px) {
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+		padding: 20px 10px;
+	}
+}
+
+.footer__image {
+	width: 100%;
+	height: 500px;
+}
